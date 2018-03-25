@@ -17,6 +17,13 @@ public class Data {
         initialized = true;
     }
 
+    public static void close() {
+        if(!initialized)
+            return;
+        connection.close();
+        initialized = false;
+    }
+
     public static boolean isUserExists(int aadharNo) throws SQLException {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users WHERE aadharNo = " + aadharNo + ";");
@@ -42,5 +49,22 @@ public class Data {
         statement.close();
 
         return valid;
+    }
+
+    public static void createUser(int aadharNo, String name, String dob, String mothersName, String fathersName) {
+        Statement statement = connection.createStatement();
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM users WHERE aadharNo = " + aadharNo + ";");
+
+        if (!resultSet.first())
+            return;
+
+        resultSet.close();
+        statement.close();
+
+        statement = connection.createStatement();
+        resultSet = statement.executeUpdate("INSERT INTO users VALUES (" + aadharNo + ", '" + name + "', '" + dob + "', '" + mothersName + "', '" + fathersName + "';");
+
+        resultSet.close();
+        statement.close();
     }
 }
