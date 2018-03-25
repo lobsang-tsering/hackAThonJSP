@@ -29,7 +29,7 @@
         
         <div id="main">
 	
-	   <form action="regisration.jsp">
+            <form action="RegistrationServlet" method="POST">
 				<label> 
 उम्मीदवार का नाम (Candidate's Name):</label>  <input type="text" name="name"><br>
 				<label> 
@@ -73,6 +73,7 @@
 		<div class="btn">
 	 		<input type="submit" name="submit"  value="Submit">
 	 		<input  type="submit" name="reset" value="reset">
+                        
  		</div>
 </form>
 
