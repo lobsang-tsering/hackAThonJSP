@@ -18,14 +18,15 @@
 }
 
 .btn{
-	width: 500px;
+	width: 700px;
   	text-align: center;
   	margin:0 auto;
   	border-radius: 4px;
+        margin-bottom: 10px;
 }
 
 .btn input:hover{
-	background-color: rgb(255,99,71); /* Green */
+    background-color: rgb(255,99,71);
     color: white;
     border-radius: 4px;
 }
@@ -34,6 +35,6 @@ label{
     display: inline-block;
     float: left;
     clear: left;
-    width: 300px;
+    width: 500px;
     text-align: right;
 }
