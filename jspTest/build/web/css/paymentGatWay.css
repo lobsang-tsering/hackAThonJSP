@@ -1,0 +1,58 @@
+body {
+	line-height: 2;
+}
+
+h1 {
+	color : green;
+}
+
+input[type=text], [type=Number] {
+	width: 50%;
+    padding: 9px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+	height: 20px;
+}
+input[type=submit] { 
+	border:none;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px 5px 0px 0px;
+	background-color:  #ff8080;
+	margin: 2px;
+}
+input[type=submit]:hover {
+	background-color:  #ff1a1a;
+}
+#paymentDiv{
+	padding: 40px;
+	width: 60%;
+	background-color: #f2f2f2;
+	margin: 20px auto;
+	margin-top: 80px;
+	border-radius: 4px;
+	margin-bottom: 0;
+}
+#optDIV {
+ margin-top: 0;
+	margin: 0 auto;
+	clear: both;
+	background-color: #fff;
+	padding: 0px 10px;
+	border: 1px solid  #ADD8E6;
+}
+
+#paymentFormDiv {
+	margin-top: 0;
+	margin: 0 auto;
+	clear: both;
+	background-color: #fff;
+	padding: 0px 10px;
+	border: 1px solid  #ADD8E6;
+}
