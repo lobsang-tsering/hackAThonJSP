@@ -1,6 +1,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Data {
@@ -8,7 +9,7 @@ public class Data {
     private static Connection connection;
     private static boolean initialized = false;
 
-    public static void initialize() {
+    public static void initialize() throws ClassNotFoundException, SQLException {
         if(initialized)
             return;
         Class.forName("java.sql.Driver");
@@ -16,7 +17,7 @@ public class Data {
         initialized = true;
     }
 
-    public static boolean isUserExists(int aadharNo) {
+    public static boolean isUserExists(int aadharNo) throws SQLException {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users WHERE aadharNo = " + aadharNo + ";");
 
@@ -28,14 +29,14 @@ public class Data {
         return exists;
     }
 
-    public static boolean validateUser(int aadharNo, String name, String dob) {
+    public static boolean validateUser(int aadharNo, String name, String dob) throws SQLException {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM users WHERE aadharNo = " + aadharNo + ";");
 
         if(!resultSet.first())
             return false;
 
-        boolean valid = resultSet.getString("name") == name && resultSet.getString("dob") == dob;
+        boolean valid = (resultSet.getString("name") == null ? name == null : resultSet.getString("name").equals(name)) && (resultSet.getString("dob") == null ? dob == null : resultSet.getString("dob").equals(dob));
 
         resultSet.close();
         statement.close();

@@ -4,7 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/user/NetBeansProjects/jspTest/web/css/index.css</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/web/css/form.css</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/src/java/SecondPage.java</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/web/css/secondPage.css</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/web/secondPage.jsp</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/src/java/RegistrationServlet.java</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/web/uploadPhot.jsp</file>
             <file>file:/Users/user/NetBeansProjects/jspTest/web/index.jsp</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/src/java/Data.java</file>
+            <file>file:/Users/user/NetBeansProjects/jspTest/web/WEB-INF/web.xml</file>
         </group>
     </open-files>
 </project-private>

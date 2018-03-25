@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
         <title>JSP Page</title>
     </head>
+    
     <body>
          <ul id="nav_ul">
             <li><a class="active" href="#home">Home</a></li>
@@ -31,9 +32,9 @@
 	
             <form action="RegistrationServlet" method="POST">
 				<label> 
-उम्मीदवार का नाम (Candidate's Name):</label>  <input type="text" name="name"><br>
+उम्मीदवार का नाम (Candidate's Name) :</label>  <input type="text" name="name"><br>
 				<label> 
-मां का नाम (Mother's Name): </label>  <input type="text" name="motherName" align="left"><br>
+मां का नाम (Mother's Name) : </label>  <input type="text" name="motherName" align="left"><br>
 				<label> 
 पिता का नाम (Father's Name) : </label> <input type="text"	name="fatherName"><br>
 				<label> 
@@ -67,14 +68,12 @@
 		 		</select>
 		 		<br>
 
-		 		<label> 
-आधार कार्ड संख्या ( Aadhaar Card Number ): </label> <input type="Number" name="aadhaarNumber"><br>
+		 		<label> आधार कार्ड संख्या  ( Aadhaar Card Number ):  </label> <input type="Number" name="aadhaarNumber"><br>
 		<br>
-		<div class="btn">
-	 		<input type="submit" name="submit"  value="Submit">
-	 		<input  type="submit" name="reset" value="reset">
-                        
- 		</div>
+                
+                <div id="subBtn">
+                    <input  type="submit" name="submit"  value="Submit">
+                </div>
 </form>
 
 	</div>
