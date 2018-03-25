@@ -1,0 +1,51 @@
+.loginForm {
+	
+}
+
+body {
+        font-family: 'Poppins';
+        font-size: 20px;
+        background-color: #ffffff;
+      }
+      
+.mainContainer {
+    margin: auto;
+    width: 80%;
+    background-color: green;
+    clear: both;
+}
+
+#nav_ul{
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 40%px;
+}
+ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width : 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #757575;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #fe4d53;
+    transition: 0.5s;
+}
+
+.active {
+    color: #e40109;
+    font-color : #e40109;
+}
